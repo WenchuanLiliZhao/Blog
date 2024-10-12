@@ -1,0 +1,23 @@
+figure.fig {
+  margin: 24px auto;
+  > .art {
+    img {
+      width: 100%;
+    }
+  }
+
+  &.small {
+    max-width: 480px;
+  }
+
+  > figcaption, > figcaption p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8px;
+    // text-align: center;
+
+    font-size: 14px;
+    line-height: 175%;
+    color: rgba(black, 0.48);
+  }
+}

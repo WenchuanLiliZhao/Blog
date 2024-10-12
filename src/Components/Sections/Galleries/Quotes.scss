@@ -1,0 +1,30 @@
+.gallery-quotes {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--text-color--main);
+
+  > .container {
+    display: grid;
+    gap: 24px;
+
+    @media only screen and (max-width: 1000px) {
+      display: block;
+    }
+
+    > .quote-in-gallery {
+      padding: 12px 16px;
+
+      > .sentence {
+        font-size: 18px;
+        line-height: 175%;
+        font-weight: bold;
+        font-family: var(--ff-serif);
+      }
+
+      > .from {
+        font-size: 16px;
+        line-height: 175%;
+        margin-top: 8px;
+      }
+    }
+  }
+}

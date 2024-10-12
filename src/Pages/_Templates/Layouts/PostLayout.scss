@@ -1,0 +1,53 @@
+.post-layout {
+  > .post-header {
+    > .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 24px;
+
+      > .label {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 4px;
+        color: var(--color-sig--main);
+      }
+
+      > .title {
+        line-height: 125%;
+        font-weight: bold;
+        font-family: var(--ff-serif);
+      }
+
+      > .brief {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+      }
+
+      > .caption {
+        margin-top: 24px;
+        font-size: 14px;
+
+        > .authors {
+          > .author {
+            > .name {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .end {
+    padding: 0 var(--content-spacing--w--res);
+    padding-top: 40px;
+    
+    .article-tags {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+}

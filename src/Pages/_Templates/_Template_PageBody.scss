@@ -1,0 +1,23 @@
+.page-body {
+  .page-body-container {
+    max-width: var(--content-max-width);
+    padding: 0 var(--content-spacing--w);
+    margin: 0 auto;
+
+    .divider-latest-update-top {
+      @media only screen and (max-width: 1000px) {
+        display: none !important;
+      }
+    }
+
+    main.page-body-main {
+      border: 2px solid var(--text-color--main);
+      border-top-width: 0;
+      padding-bottom: 24px;
+
+      @media only screen and (max-width: 1000px) {
+        border: none;
+      }
+    }
+  }  
+}

@@ -1,0 +1,14 @@
+:root {
+  --text-color--main: #292929;
+  --text-color--main-trans: rgba(0, 0, 0, 0.88);
+
+  --bg-color--main: white;
+
+  --color-sig--main: #D62831;
+  --color-sig--sec: #F5CBCE;
+}
+
+html, body {
+  color: var(--text-color--main);
+  background-color: var(--bg-color--main);
+}

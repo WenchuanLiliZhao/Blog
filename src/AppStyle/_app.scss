@@ -1,0 +1,12 @@
+@import "./0_reset.scss";
+@import "./color.scss";
+@import "./icon.scss";
+@import "./spacing.scss";
+@import "./z-index.scss";
+@import "./hide&show.scss";
+
+@import "./font.scss";
+
+html {
+  scroll-behavior: smooth;
+}

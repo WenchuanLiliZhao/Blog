@@ -1,0 +1,213 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index--nav);
+  height: var(--nav-height);
+
+  background-color: var(--bg-color--main);
+  box-shadow: 0 2px 0 var(--text-color--main);
+
+  .top-nav-logo {
+    display: flex;
+    gap: 8px;
+
+    .top-nav-logo-image {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1000px;
+      align-self: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
+
+    .top-nav-logo-text {
+      font-size: 17px;
+      line-height: var(--nav-height);
+      align-self: center;
+      height: var(--nav-height);
+      overflow: hidden;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+
+  .top-nav-items {
+    display: flex;
+    gap: 24px;
+    transition: 0.3s;
+
+    .top-nav-item {
+      cursor: pointer;
+
+      &.channel {
+        font-size: 15px;
+        font-weight: bold;
+
+        display: flex;
+        
+        @media only screen and (max-width: 800px) {
+          display: none;
+        }
+
+        & > .container {
+          align-self: center;
+
+          & .deco {
+            width: 1px;
+            height: 4px;
+            border-radius: 100px;
+            margin: 8px auto;
+          }
+        }
+
+        &.active {
+          
+          .deco.sensitive {
+            background-color: var(--color-sig--main) !important;
+            width: 16px;
+            
+          }
+        }
+
+        &:hover {
+          color: var(--color-sig--main);
+
+          .deco.sensitive {
+            background-color: var(--color-sig--sec);
+            width: 16px;
+          }
+        }
+      }
+
+      &.icon-item {
+        display: flex;
+        line-height: 64px;
+
+        & > .icon {
+          align-items: center;
+        }
+
+        &.menu {
+          
+
+          & > .menu-body {
+            opacity: 0;
+            pointer-events: none;
+          }
+
+          & > .menu-bg-btn {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            display: none;
+          }
+
+          &.activated {
+            & > .menu-body {
+              opacity: 1;
+              pointer-events: all;
+            }
+
+            & > .menu-bg-btn {
+              display: block;
+            }
+          }
+
+          & > .menu-body {
+            position: absolute;
+            border: 2px solid var(--text-color--main);
+            transform: translate(0%, 100%);
+            bottom: 0;
+            right: 0;
+
+            width: 200px;
+
+            background-color: var(--bg-color--main);
+
+            font-size: 15px;
+            line-height: 1;
+            overflow: hidden;
+
+            box-shadow: 0 8px 16px rgba(black, 0.16), 0 1px 2px rgba(black, 0.08);
+
+            & > .container {
+              display: grid;
+              gap: 8px;
+              padding-top: 12px;
+              padding-bottom: 12px;
+              padding-left: 8px;
+              padding-right: 8px;
+
+              width: 100%;
+              height: 100%;
+              overflow-y: auto;
+              overflow-x: hidden;
+              & > .group {
+                padding-top: 8px;
+                display: grid;
+                row-gap: 8px;
+                
+                &:not(:last-of-type) {
+                  padding-bottom: 12px;
+                  border-bottom: 1px dashed var(--text-color--main);
+                }
+
+                & > .title {
+                  padding: 8px;
+                  padding-top: 0;
+                  font-weight: bold;
+                }
+
+                & > .item {
+                  display: block;
+                  padding: 8px;
+                  border-radius: 4px;
+
+                  &:hover {
+                    background-color: var(--color-sig--main);
+                    color: var(--bg-color--main);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .mask-left {
+    position: absolute;
+    left: 8px; top: 0;
+    width: 16px;
+    height: 100%;
+    background-color: var(--bg-color--main);
+    transform: translate(-100%, 0);
+  }
+
+  > .mask-right {
+    position: absolute;
+    right: 8px; top: 0;
+    width: 16px;
+    height: 100%;
+    background-color: var(--bg-color--main);
+    transform: translate(100%, 0);
+  }
+}

@@ -1,0 +1,13 @@
+.inline-tag {
+  display: inline-block;
+  padding: 0 1em;
+  line-height: 200%;
+  background-color: var(--text-color--main);
+  border-radius: 100px;
+  color: var(--bg-color--main);
+
+  &::before {
+    content: "#";
+    margin-right: 0.125em;
+  }
+}

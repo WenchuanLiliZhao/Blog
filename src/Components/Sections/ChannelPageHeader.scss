@@ -1,0 +1,32 @@
+.channel-page-header {
+  padding-left: var(--content-spacing--w--res);
+  padding-right: var(--content-spacing--w--res);
+  padding-top: 80px;
+  padding-bottom: 24px;
+
+  & > .container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    & > .label {
+      color: var(--color-sig--main);
+      // font-family: var(--ff-serif);
+      margin-bottom: 4px;
+      // font-weight: bold;
+      line-height: 24px;
+    }
+
+    & > .title {
+      line-height: 125%;
+      font-weight: bold;
+      font-family: var(--ff-serif);
+    }
+
+    & > .brief {
+      line-height: 24px;
+      margin-top: 16px;
+    }
+  }
+}

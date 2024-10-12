@@ -1,0 +1,13 @@
+:root {
+  --content-spacing--w: 24px;
+  --content-spacing--v: 24px;
+  --content-max-width: 1488px;
+  --nav-height: 64px;
+  --section-spacing--v: 40px;
+  --page-header-spacing--top: 80px;
+
+  --content-spacing--w--res: 24px;
+  @media only screen and (max-width: 1000px) {
+    --content-spacing--w--res: 0;
+  }
+}

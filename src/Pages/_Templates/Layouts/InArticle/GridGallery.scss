@@ -1,0 +1,50 @@
+.lili-grid-gallery {
+  display: grid;
+  padding: 24px;
+  gap: 24px 16px;
+
+  @media only screen and (max-width: 1000px) {
+    padding: 24px 0;
+  }
+
+  &.columns-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  &.columns-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &.columns-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  > .art {
+    > .img-container {
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0; left: 0;
+        object-fit: cover;
+      }
+    }
+
+    > .caption {
+      font-size: 14px;
+      color: rgba(black, 0.48);
+      margin-top: 8px;
+    }
+  }
+}
+
