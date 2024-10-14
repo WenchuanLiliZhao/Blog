@@ -1,20 +1,6 @@
 
-import MD from "../../../Components/Markdown/MD";
-import Sec from "../../_Templates/Layouts/InArticle/_ArticleSection";
-import Fig from "../../_Templates/Layouts/InArticle/Fig";
 import Template_Page from "../../_Templates/Template_Page";
 import Author_Suep from "../../Authors/Author_Suep";
-
-
-const content = `
-ppppp
-
-ssss $x$
-
-$$
-\\int
-$$
-`
 
 
 const Post_3: Template_Page = {
@@ -34,34 +20,7 @@ const Post_3: Template_Page = {
   },
   content: (
     <>
-      <Sec size="large">
-        <Fig
-          art={
-            <img
-              src="https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg"
-              alt=""
-            />
-          }
-          caption={
-            <p>
-              Photo by The{" "}
-              <a href="https://unsplash.com/@clevelandart?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">
-                Cleveland Museum of Art
-              </a>{" "}
-              on{" "}
-              <a href="https://unsplash.com/photos/a-painting-of-a-river-with-trees-and-mountains-in-the-background-xvMkkWTUPv8?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">
-                Unsplash
-              </a>
-            </p>
-          }
-        />
-      </Sec>
-
-      <Sec>
-        <MD>
-          {content}
-        </MD>
-      </Sec>
+      
     </>
   ),
 };

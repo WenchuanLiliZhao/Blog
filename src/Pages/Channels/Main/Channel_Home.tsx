@@ -1,5 +1,4 @@
 import Gallery_MediumCards from "../../../Components/Sections/Galleries/MediumCards";
-import Section_NewsClipping from "../../../Components/Sections/NewsClipping";
 import PageSection from "../../../Components/Sections/PageSection";
 import SiteInfo from "../../../SiteInfo";
 import Template_Page from "../../_Templates/Template_Page";
@@ -13,14 +12,11 @@ const Channel_Home: Template_Page = {
     title_display: <>{SiteInfo.title}</>,
     label: `聯合電子出版`,
     latest_update: SiteInfo.latest_update,
-    front: (
-      <Section_NewsClipping className="only-show-above-screen-size-1000" />
-    ),
+    front: undefined,
   },
 
   content: (
     <>
-
       <PageSection
         title="最新動態"
         brief="探索中華文化的奇趣魅力，開啟一段全新旅程"
@@ -32,10 +28,6 @@ const Channel_Home: Template_Page = {
           ]}
         />
       </PageSection>
-
-      
-
-      <Section_NewsClipping className="only-show-below-screen-size-1000" />
     </>
   ),
 };
