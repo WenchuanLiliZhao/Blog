@@ -6,8 +6,10 @@ import PageBody from "../_Template_PageBody";
 import Tag from "../../../Components/Inlines/Tag";
 import Divider_Wave from "../../../Components/Divider/Wave";
 import SiteInfo from "../../../SiteInfo";
-import Template_Author from "../Template_AuthorsInPost";
+import Template_Author from "../Template_AuthorInPost";
 import DateFormatter from "../../../Components/Functions/DateFormatter";
+import ContentMapper from "../../../Components/Functions/ContentMapper";
+// import ContentMapper from "../../../Components/Functions/ContentMapper";
 
 interface Props {
   data: Template_Page;
@@ -64,7 +66,9 @@ const PostLayout: React.FC<Props> = ({ data }) => {
             </div>
           </div>
 
-          <article className="post-body">{data.content}</article>
+          <article className="post-body">
+            <ContentMapper content={data.content} />
+          </article>
 
           <div className="end">
             <div className="article-tags">

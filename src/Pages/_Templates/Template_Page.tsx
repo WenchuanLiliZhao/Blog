@@ -1,25 +1,26 @@
-import Template_Author from "./Template_AuthorsInPost"
+import Template_Author from "./Template_AuthorInPost";
 
 interface Template_Page {
   info: {
-    title: string,
-    key: string,
-    brief: string,
-    latest_update: [number, number, number],
+    title: string;
+    key: string;
+    brief: string;
+    latest_update: [number, number, number];
 
-    cover?: string,
+    cover?: string;
 
-    label?: string,
-    front?: JSX.Element,
+    label?: string;
+    front?: JSX.Element;
 
-    showHeader?: boolean,
-    title_display?: JSX.Element,
-    authors?: Template_Author[],
-    
-    tags?: Template_Page[],
-  },
+    showHeader?: boolean;
+    title_display?: JSX.Element;
+    authors?: Template_Author[];
 
-  content: JSX.Element | JSX.Element[],
+    tags?: Template_Page[];
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  content: any;
 }
 
-export default Template_Page
+export default Template_Page;

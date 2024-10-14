@@ -1,7 +1,33 @@
-
 import Template_Page from "../../_Templates/Template_Page";
 import Author_Suep from "../../Authors/Author_Suep";
 
+const content = [
+  `
+$x = 1$
+
+$$
+\\begin{aligned}
+\\forall x \\; \\forall y \\; \\forall z \\; ((z \\in x \\Leftrightarrow z \\in y) \\implies x = y)
+\\end{aligned}
+$$
+
+\`\`\`html
+<html>
+\`\`\`
+
+`,
+
+  <img src="https://i.pinimg.com/control/564x/9a/5c/24/9a5c247c8cb8995ed5c970397e74af45.jpg" />,
+  `
+$x = 1$
+
+$$
+\\begin{aligned}
+\\forall x \\; \\forall y \\; \\forall z \\; ((z \\in x \\Leftrightarrow z \\in y) \\implies x = y)
+\\end{aligned}
+$$
+`,
+];
 
 const Post_3: Template_Page = {
   info: {
@@ -18,11 +44,7 @@ const Post_3: Template_Page = {
       },
     ],
   },
-  content: (
-    <>
-      
-    </>
-  ),
+  content: content,
 };
 
 export default Post_3;
