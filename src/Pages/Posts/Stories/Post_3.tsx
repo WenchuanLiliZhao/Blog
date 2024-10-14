@@ -1,11 +1,25 @@
+
+import MD from "../../../Components/Markdown/MD";
 import Sec from "../../_Templates/Layouts/InArticle/_ArticleSection";
 import Fig from "../../_Templates/Layouts/InArticle/Fig";
 import Template_Page from "../../_Templates/Template_Page";
 import Author_Suep from "../../Authors/Author_Suep";
 
+
+const content = `
+ppppp
+
+ssss $x$
+
+$$
+\\int
+$$
+`
+
+
 const Post_3: Template_Page = {
   info: {
-    title: "「中華文化有意思」從何而來？",
+    title: "Why Do We Build the Wall?",
     key: "post_3",
     cover:
       "https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg",
@@ -41,6 +55,12 @@ const Post_3: Template_Page = {
             </p>
           }
         />
+      </Sec>
+
+      <Sec>
+        <MD>
+          {content}
+        </MD>
       </Sec>
     </>
   ),

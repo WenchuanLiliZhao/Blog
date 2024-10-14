@@ -5,19 +5,19 @@ import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 
 interface Props {
-  children: string
+  children: any
 }
 
-const Equation: React.FC<Props> = ({ children }) => {
+const MD: React.FC<Props> = ({ children }) => {
 
   return (
     <ReactMarkdown
       remarkPlugins={[remarkMath]}
       rehypePlugins={[rehypeKatex]}
     >
-      {`$$\\displaystyle ${children} $$`}
+      {children}
     </ReactMarkdown>
   );
 };
 
-export default Equation
+export default MD
