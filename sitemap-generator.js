@@ -1,12 +1,11 @@
 // Ensure this file extension is .js (with "type": "module" in package.json)
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { createWriteStream } from 'node:fs';
-import { resolve } from 'node:path';
+import { resolve } from 'node:path'
 
 // URLs you want to include, ideally these should be dynamic based on your routes
 const links = [
-  { url: '/', changefreq: 'daily', priority: 0.3 },
-  { url: '/about', changefreq: 'weekly', priority: 0.7 },
+  { url: '/', changefreq: 'weekly', priority: 1.0 },
   // Add more paths as needed
 ];
 
