@@ -27,6 +27,8 @@ const social_medias: { [key: string]: SocialMedia } = {
 const SiteInfo: Site = {
   title: "Riverwood Library",
 
+  url: "https://wenchuanlilizhao.netlify.app/",
+
   logo: {
     image: LogoImage,
     text: (<img src={Logo}/>),

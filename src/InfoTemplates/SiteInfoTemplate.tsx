@@ -7,6 +7,8 @@ interface SocialMedias {
 interface Site {
   title: string,
 
+  url: string,
+
   logo: {
     image: string
     text: JSX.Element,

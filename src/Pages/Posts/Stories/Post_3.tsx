@@ -78,6 +78,12 @@ const Post_3: Template_Page = {
         data: Author_Wenchuan,
       },
     ],
+
+    keywords: [
+      "a",
+      "bbb",
+      "ccc",
+    ],
   },
   content: content,
 };

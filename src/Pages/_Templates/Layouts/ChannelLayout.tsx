@@ -2,8 +2,7 @@ import React from "react";
 import Template_Page from "../Template_Page";
 import PageBody from "../_Template_PageBody";
 import ChannelPageHeader from "../../../Components/Sections/ChannelPageHeader";
-import { Helmet } from "react-helmet-async";
-import SiteInfo from "../../../SiteInfo";
+import LiliHelmet from "../../../Components/Functions/LiliHelmet";
 
 interface Props {
   data: Template_Page;
@@ -12,11 +11,7 @@ interface Props {
 const ChannelLayout: React.FC<Props> = ({ data }) => {
   return (
     <>
-      <Helmet>
-        {/* Example meta tags; customize these as needed */}
-        <title>{SiteInfo.title} :: {data.info.title}</title>
-        <meta name="description" content={data.info.brief} />
-      </Helmet>
+      <LiliHelmet data={data} />
       <PageBody>
         <>
           {data.info.front != null ? data.info.front : <></>}

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import "./AppStyle/_app.scss";
 
 import { useState, useEffect } from "react";
@@ -7,6 +8,8 @@ import ChannelLayout from "./Pages/_Templates/Layouts/ChannelLayout";
 import Template_Page from "./Pages/_Templates/Template_Page";
 import Posts from "./Pages/Posts/_Posts";
 import PostLayout from "./Pages/_Templates/Layouts/PostLayout";
+
+import ReactDOMServer from 'react-dom/server';
 
 import React, { Suspense } from 'react';
 const LazyComponent = React.lazy(() => import('./LazyComponent'));
@@ -71,4 +74,9 @@ function App() {
   );
 }
 
+function render() {
+  return ReactDOMServer.renderToString(<App />);
+}
+
 export default App;
+export { render };

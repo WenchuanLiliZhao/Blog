@@ -3,14 +3,12 @@ import "./PostLayout.scss";
 import React from "react";
 import Template_Page from "../Template_Page";
 import PageBody from "../_Template_PageBody";
-import Tag from "../../../Components/Inlines/Tag";
-import Divider_Wave from "../../../Components/Divider/Wave";
 import SiteInfo from "../../../SiteInfo";
 import Template_Author from "../Template_AuthorInPost";
 import DateFormatter from "../../../Components/Functions/DateFormatter";
 import ContentMapper from "../../../Components/Functions/ContentMapper";
 // import ContentMapper from "../../../Components/Functions/ContentMapper";
-import { Helmet } from "react-helmet-async";
+import LiliHelmet from "../../../Components/Functions/LiliHelmet";
 
 interface Props {
   data: Template_Page;
@@ -21,11 +19,7 @@ const PostLayout: React.FC<Props> = ({ data }) => {
 
   return (
     <>
-      <Helmet>
-        {/* Example meta tags; customize these as needed */}
-        <title>{SiteInfo.title} :: {data.info.title}</title>
-        <meta name="description" content={data.info.brief} />
-      </Helmet>
+      <LiliHelmet data={data} />
       <PageBody>
         <div className="post-layout">
           {data.info.front != null ? data.info.front : <></>}
@@ -78,22 +72,6 @@ const PostLayout: React.FC<Props> = ({ data }) => {
             </section>
           </article>
 
-          <div className="end">
-            <div className="article-tags">
-              <div className="container">
-                {data.info.tags != undefined ? (
-                  <>
-                    {data.info.tags.map((item: Template_Page, i: number) => (
-                      <Tag key={`${item}${i}`} data={item} size={14} />
-                    ))}
-                  </>
-                ) : (
-                  ""
-                )}
-              </div>
-            </div>
-            <Divider_Wave />
-          </div>
         </div>
       </PageBody>
     </>

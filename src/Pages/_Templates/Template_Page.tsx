@@ -16,7 +16,7 @@ interface Template_Page {
     title_display?: JSX.Element;
     authors?: Template_Author[];
 
-    tags?: Template_Page[];
+    keywords?: string[];
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
