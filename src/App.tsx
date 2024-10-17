@@ -32,6 +32,10 @@ function App() {
             }
           />
 
+          <Route
+            path={`/sitemap.xml`}
+          />
+
           {/* import channels */}
           {Object.values(Channels).map((item: Template_Page, i: number) => (
             <Route
