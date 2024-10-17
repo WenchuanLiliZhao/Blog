@@ -11,7 +11,7 @@ const links = [
 ];
 
 (async () => {
-  const sitemap = new SitemapStream({ hostname: 'https://www.yourwebsite.com' });
+  const sitemap = new SitemapStream({ hostname: 'https://wenchuanlilizhao.netlify.app/' });
   const writeStream = createWriteStream(resolve(process.cwd(), 'public', 'sitemap.xml'));
   sitemap.pipe(writeStream);
 

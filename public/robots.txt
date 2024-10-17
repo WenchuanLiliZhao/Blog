@@ -1,0 +1,7 @@
+# robots.txt for https://wenchuanlilizhao.netlify.app/
+
+User-agent: *
+Allow: /
+# Disallow specific paths if needed
+# Disallow: /private/
+Sitemap: https://wenchuanlilizhao.netlify.app/sitemap.xml
