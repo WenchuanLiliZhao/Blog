@@ -8,6 +8,10 @@ import Template_Page from "./Pages/_Templates/Template_Page";
 import Posts from "./Pages/Posts/_Posts";
 import PostLayout from "./Pages/_Templates/Layouts/PostLayout";
 
+import React, { Suspense } from 'react';
+const LazyComponent = React.lazy(() => import('./LazyComponent'));
+
+
 function App() {
   useState(() => {
     // console.log()
@@ -59,6 +63,10 @@ function App() {
           ))}
         </Routes>
       </BrowserRouter>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyComponent />
+      </Suspense>
     </>
   );
 }

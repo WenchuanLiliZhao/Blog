@@ -1,20 +1,55 @@
 import Template_Page from "../../_Templates/Template_Page";
-import Author_Suep from "../../Authors/Author_Suep";
+import Author_Wenchuan from "../../Authors/Author_Wenchuan";
+
+
 
 const content = [
-  `
-$x = 1$
+`
+## Primitive Notions
 
+It is impossible to establish a formal theory in which every term is formally defined in the language of the theory. In other words, no formal theory can be entirely unambiguous. Otherwise, if such a theory existed, it would either start from a set of circular definitions or an infinite chain of definitions. This is a fundamental limitation in the nature of formal theories.
+
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1 Cell 1 | Row 1 Cell 2 | Row 1 Cell 3 |
+| Row 2 Cell 1 | Row 2 Cell 2 | Row 2 Cell 3 |
+
+
+
+As a compromise, every formal theory begins with a set of undefined terms. We call these terms **primitive notions** of the theory.
+
+In ancient times, the existence of primitive notions was often overlooked. For example, at the first glance, Euclid’s book *Elements* seems like an extensive discussion on a collection of unambiguously defined notions such as “point,”  “line,” “plane,” etc. However, from a modern perspective, some terms are not well-defined but tacitly adopted in the system. Take the definition of points for example:
+
+> A **point** is that which has no part.
+
+This conveys an intuitive idea of a point being an indivisible entity. But, what exactly the term “part” means? The author does not provide any explanation.
+
+Modern treatments tend to adopt “point” as a primitive notion in Euclid’s system, making the system appear more concise.
+
+In 1899, David Hilbert delivered a lecture on Euclid's *Elements*, which was later published as the book *Grundlagen der Geometrie* (the *Foundation of Geometry*). It provides a modern treatment on Euclidean geometry, demonstrating an axiomatization with six primitive notions:
+
+1. points,
+2. lines,
+3. plane,
+4. betweenness,
+5. lies on,
+6. congruence.
+
+Points, lines and planes are the **primitive objects** in the system. In Hilbert’s words, they are the elements of three-dimensional Euclidean geometry. Betweenness, “lies on,” and congruence are the **primitive relations** whose variables range over all primitive objects. Complex geometric entities, such as rays, angles, triangles, circles, and cubes, are considered systems of primitive objects rather than individual objects.
+
+According to Hilbert's axiomatization, the system introduced in Euclid's *Elements* can be considered a first-order axiomatization in a modern perspective. That is, in a loose, intuitive understanding, each proposition can be represented as a string of symbols including logic symbols. For example, Axiom I.1 in the book:
+
+> Two distinct points $A$ and $B$ always completely determine a straight line $a$. We write $AB = a$ or $BA = a$.
+
+It can be written in symbols as:
 $$
 \\begin{aligned}
-\\forall x \\; \\forall y \\; \\forall z \\; ((z \\in x \\Leftrightarrow z \\in y) \\implies x = y)
+\\forall A\\; \\forall B \\; ( &\\mathrm{Pt}(A) \\land \\mathrm{Pt}(B) \\land A \\ne B \\\\
+&\\iff \\exists ! a \\; ( \\mathrm{Ln}(a) \\land \\mathrm{On}(A,a) \\land \\mathrm{On}(B,a) )),
 \\end{aligned}
 $$
-
-\`\`\`html
-<html>
-\`\`\`
-
+where $\\mathrm{Pt}(A)$ denotes “$A$ is a point,” $\\mathrm{Ln}(a)$ denotes “$a$ is a line,” and $\\mathrm{On}(A,a)$ denotes “$A$ lies on $a$.”
 `,
 
   <img src="https://i.pinimg.com/control/564x/9a/5c/24/9a5c247c8cb8995ed5c970397e74af45.jpg" />,
@@ -37,10 +72,10 @@ const Post_3: Template_Page = {
       "https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg",
     latest_update: [2024, 9, 3],
     brief:
-      "中華文化是多樣且複雜的。我們強調摒棄刻板印象，以更全面的眼光理解這一文化的重要性。中華文化並非單一的道統，而是一個包羅萬象、充滿各式觀點的龐大體系，涉及詩歌、音樂、藝術、哲學等多個領域。了解中華文化的最佳途徑是透過閱讀、觀賞、聆聽和旅行，以遊玩的心態探索其中的趣味。我們通過多元的學習方式，如電子書、角色扮演及非遺手工等，鼓勵年輕人感受中華文化的魅力。總之，真正欣賞中華文化需要深入探索與反思，並在其中尋找自我表達的方式。",
+      "This conveys an intuitive idea of a point being an indivisible entity. But, what exactly the term “part” means? The author does not provide any explanation.Modern treatments tend to adopt “point” as a primitive notion in Euclid’s system, making the system appear more concise.",
     authors: [
       {
-        data: Author_Suep,
+        data: Author_Wenchuan,
       },
     ],
   },

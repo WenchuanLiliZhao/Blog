@@ -7,7 +7,7 @@ interface Template_Page {
     brief: string;
     latest_update: [number, number, number];
 
-    cover?: string;
+    cover: string;
 
     label?: string;
     front?: JSX.Element;

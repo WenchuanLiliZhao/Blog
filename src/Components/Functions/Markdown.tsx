@@ -3,16 +3,17 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
+import remarkGfm from 'remark-gfm';
 
 interface Props {
   children: any
 }
 
-const MD: React.FC<Props> = ({ children }) => {
+const Markdown: React.FC<Props> = ({ children }) => {
 
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkMath]}
+      remarkPlugins={[remarkMath, remarkGfm]}
       rehypePlugins={[rehypeKatex]}
     >
       {children}
@@ -20,4 +21,4 @@ const MD: React.FC<Props> = ({ children }) => {
   );
 };
 
-export default MD
+export default Markdown

@@ -10,6 +10,7 @@ import Template_Author from "../Template_AuthorInPost";
 import DateFormatter from "../../../Components/Functions/DateFormatter";
 import ContentMapper from "../../../Components/Functions/ContentMapper";
 // import ContentMapper from "../../../Components/Functions/ContentMapper";
+import { Helmet } from "react-helmet-async";
 
 interface Props {
   data: Template_Page;
@@ -20,6 +21,11 @@ const PostLayout: React.FC<Props> = ({ data }) => {
 
   return (
     <>
+      <Helmet>
+        {/* Example meta tags; customize these as needed */}
+        <title>{SiteInfo.title} :: {data.info.title}</title>
+        <meta name="description" content={data.info.brief} />
+      </Helmet>
       <PageBody>
         <div className="post-layout">
           {data.info.front != null ? data.info.front : <></>}
@@ -56,7 +62,7 @@ const PostLayout: React.FC<Props> = ({ data }) => {
                     {` · `}
                     <DateFormatter
                       date={data.info.latest_update}
-                      language={"zh"}
+                      language={"en"}
                     />
                   </span>
                 </div>
@@ -67,7 +73,9 @@ const PostLayout: React.FC<Props> = ({ data }) => {
           </div>
 
           <article className="post-body">
-            <ContentMapper content={data.content} />
+            <section>
+              <ContentMapper content={data.content} />
+            </section>
           </article>
 
           <div className="end">

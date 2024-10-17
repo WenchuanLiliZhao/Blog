@@ -6,13 +6,14 @@ import Posts from "../../Posts/_Posts";
 
 const Channel_Home: Template_Page = {
   info: {
-    title: "首頁",
+    title: "Home",
     key: "",
     brief: `${SiteInfo.brief}`,
     title_display: <>{SiteInfo.title}</>,
     label: `聯合電子出版`,
     latest_update: SiteInfo.latest_update,
     front: undefined,
+    cover: ""
   },
 
   content: (
