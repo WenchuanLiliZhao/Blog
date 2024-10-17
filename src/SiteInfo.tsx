@@ -31,7 +31,7 @@ const SiteInfo: Site = {
 
   logo: {
     image: LogoImage,
-    text: (<img src={Logo}/>),
+    text: (<img src={Logo} />),
   },
 
   brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur, augue vitae pulvinar malesuada, augue ex bibendum lorem, sed fermentum massa massa id mi. Curabitur pretium blandit tortor id pharetra. Nam elementum, ligula ut aliquam mattis, lacus velit lacinia urna, eu luctus velit augue sed erat. Praesent sit amet feugiat nisl. In finibus nulla ac nisi dictum finibus sed vitae leo. Donec iaculis magna vel eleifend congue. Duis ac condimentum massa. Suspendisse aliquet orci venenatis libero placerat rutrum. Donec placerat viverra urna. Curabitur convallis ac urna eget accumsan.",
@@ -62,7 +62,8 @@ const SiteInfo: Site = {
       title: "中華文化研習社WhatsApp群組",
       info: "https://chat.whatsapp.com/BNS5UfWFlak7z2v22Lh3Zn",
     },
-  }
+  },
+  
 }
 
 export default SiteInfo
