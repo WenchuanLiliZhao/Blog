@@ -1,4 +1,5 @@
 // Ensure this file extension is .js (with "type": "module" in package.json)
+import { mkdirSync } from 'node:fs';
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { createWriteStream } from 'node:fs';
 import { resolve } from 'node:path'
@@ -21,3 +22,9 @@ const links = [
   await streamToPromise(sitemap);
   console.log('Sitemap has been generated!');
 })();
+
+try {
+  mkdirSync(resolve(process.cwd(), 'public'), { recursive: true });
+} catch (err) {
+  console.error('Error creating directory:', err);
+}
