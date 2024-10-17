@@ -6,6 +6,7 @@ import { resolve } from 'node:path'
 // URLs you want to include, ideally these should be dynamic based on your routes
 const links = [
   { url: '/', changefreq: 'weekly', priority: 1.0 },
+  { url: '/about', changefreq: 'weekly', priority: 0.3 },
   // Add more paths as needed
 ];
 
