@@ -7,7 +7,7 @@ import Posts from "../../Posts/_Posts";
 const Channel_About: Template_Page = {
   info: {
     title: "About",
-    key: "",
+    key: "about",
     brief: `${SiteInfo.brief}`,
     title_display: <>{SiteInfo.title}</>,
     label: `聯合電子出版`,
