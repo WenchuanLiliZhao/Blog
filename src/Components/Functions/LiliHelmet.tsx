@@ -27,8 +27,14 @@ const LiliHelmet: React.FC<Props> = ({ data }) => {
         {`{
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": ${SiteInfo.title},
-          "url": ${SiteInfo.url}
+          "name": "${SiteInfo.title}",
+          "url": "${SiteInfo.url}",
+
+          "author": ${data.info.authors != undefined ? `"${data.info.authors[0].data.info.title}",` : `"${SiteInfo.author.info.title}",`}
+
+          ${data.info.cover != undefined ? `"image": "${data.info.cover}",` : null}
+
+          "abstract": "${data.info.brief}",
         }`}
       </script>
 

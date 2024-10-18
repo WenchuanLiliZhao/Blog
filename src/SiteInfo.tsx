@@ -3,6 +3,7 @@ import Site from "./InfoTemplates/SiteInfoTemplate"
 import SocialMedia from "./InfoTemplates/SocialMedia"
 import LogoImage from "./assets/LogoImage.png"
 import Logo from "./assets/Logo.png"
+import Author_Wenchuan from "./Pages/Authors/Author_Wenchuan"
 
 const social_medias: { [key: string]: SocialMedia } = {
   facebook: {
@@ -26,6 +27,8 @@ const social_medias: { [key: string]: SocialMedia } = {
 
 const SiteInfo: Site = {
   title: "Riverwood Library",
+
+  author: Author_Wenchuan,
 
   url: "https://wenchuanlilizhao.netlify.app/",
 

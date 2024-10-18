@@ -1,3 +1,4 @@
+import Template_Page from "../Pages/_Templates/Template_Page"
 import SocialMedia from "./SocialMedia"
 
 interface SocialMedias {
@@ -6,6 +7,8 @@ interface SocialMedias {
 
 interface Site {
   title: string,
+
+  author: Template_Page,
 
   url: string,
 
