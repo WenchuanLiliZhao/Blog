@@ -27,7 +27,7 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum a orci 
 Aenean vestibulum dapibus leo, id ultricies nunc posuere id. Morbi mattis, purus non consectetur varius, nisi dui consequat tellus, eu fermentum nulla neque sed sem. Duis at lacus nibh. Ut rutrum, eros id sodales euismod, ante ipsum volutpat felis, eget fringilla elit ligula vel ante. Morbi porttitor volutpat massa eget lobortis. Suspendisse fringilla urna vel justo pharetra fringilla. Maecenas at malesuada nisl. Integer tortor libero, convallis a vehicula ut, volutpat vitae quam. Nulla vitae gravida risus, vitae vehicula nisi. Donec at nunc nec risus porttitor ornare vel quis magna. Aenean lorem sapien, malesuada at nulla quis, dapibus laoreet dolor. Proin eleifend tortor sollicitudin, maximus nisl non, facilisis odio.
 `,
 
-  <Fig src={"https://i.pinimg.com/control/564x/9a/5c/24/9a5c247c8cb8995ed5c970397e74af45.jpg"} title={"img"} caption={`ss $x$ **aa**`} />,
+  <Fig src={"https://doodleipsum.com/700/flat?bg=000000&i=191258f28a3672a5589de78d98ac7967"} title={"img"} caption={`ss $x$ **aa**`} />,
 
   `
 $x = 1$

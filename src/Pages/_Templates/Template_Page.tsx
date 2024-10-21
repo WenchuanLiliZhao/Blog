@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Template_Author from "./Template_Author";
+import Template_Book from "./Template_Book";
 interface Template_Page {
   info: {
     title: string;
     key: string;
     brief: string;
-    latest_update: [number, number, number];
+    latest_update: number[];
     cover: string;
     type: string;
     authors: Template_Author[];
@@ -17,14 +18,12 @@ interface Template_Page {
     showHeader?: boolean;
     title_display?: JSX.Element;
 
-    theme?: {[key: string] : string;}
+    theme?: { [key: string]: string };
 
-    inbook?: any
+    inbook?: Template_Book;
   };
-  
-  content: any;
 
-  
+  content: any;
 }
 
 export default Template_Page;

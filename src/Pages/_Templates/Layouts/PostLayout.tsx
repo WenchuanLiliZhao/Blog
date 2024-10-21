@@ -17,6 +17,8 @@ interface Props {
 const PostLayout: React.FC<Props> = ({ data }) => {
   const showAuthors = data.info.authors != undefined;
 
+  console.log(data.info.inbook != undefined ? data.info.inbook.coverPage.info.title : "")
+
   return (
     <>
       <LiliHelmet data={data} />

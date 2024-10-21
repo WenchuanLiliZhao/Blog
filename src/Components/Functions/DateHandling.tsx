@@ -31,15 +31,11 @@ const day = today.getDate();
 const Today: [number, number, number] = [year, month, day];
 
 
-
-function IsLaterDate(date1: [number, number, number], date2: [number, number, number]): boolean {
-  if (date1[0] !== date2[0]) {
-    return date1[0] > date2[0]; // compare years
-  }
-  if (date1[1] !== date2[1]) {
-    return date1[1] > date2[1]; // compare months
-  }
-  return date1[2] > date2[2]; // compare days
+function IsLaterDate(date1: number[], date2: number[]): boolean {
+  if (date1[0] !== date2[0]) return date1[0] > date2[0]; // Compare year
+  if (date1[1] !== date2[1]) return date1[1] > date2[1]; // Compare month
+  return date1[2] > date2[2]; // Compare day
 }
+
 
 export { IsLaterDate, DateFormatter, Today }
