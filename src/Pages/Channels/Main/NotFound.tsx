@@ -11,7 +11,8 @@ const NotFound: Template_Page = {
     cover: "",
     type: "",
     authors: [],
-    tags: []
+    tags: [],
+    label: ""
   },
   content: (<>404 hahhahahh</>)
 }

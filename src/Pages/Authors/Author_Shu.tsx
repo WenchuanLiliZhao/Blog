@@ -9,7 +9,8 @@ const Author_Shu: Template_Page = {
     cover: "",
     type: "",
     authors: [],
-    tags: []
+    tags: [],
+    label: ""
   },
   content: (<></>)
 }

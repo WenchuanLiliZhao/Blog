@@ -15,7 +15,8 @@ const Channel_About: Template_Page = {
     front: undefined,
     cover: "",
     authors: [],
-    tags: []
+    tags: [],
+    label: ""
   },
 
   content: (
@@ -27,7 +28,7 @@ const Channel_About: Template_Page = {
         <Gallery_MediumCards
           columnCount={3}
           posts={[
-            Posts.Post_3
+            Posts.Test_Page_1
           ]}
         />
       </PageSection>

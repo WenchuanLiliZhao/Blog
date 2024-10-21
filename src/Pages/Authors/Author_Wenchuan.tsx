@@ -9,7 +9,8 @@ const Author_Wenchuan: Template_Page = {
     cover: "",
     type: "",
     authors: [],
-    tags: []
+    tags: [],
+    label: ""
   },
   content: (<></>)
 }

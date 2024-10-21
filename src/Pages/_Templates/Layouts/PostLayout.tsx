@@ -17,10 +17,6 @@ interface Props {
 const PostLayout: React.FC<Props> = ({ data }) => {
   const showAuthors = data.info.authors != undefined;
 
-  if (data.info.inBook != null) {
-    console.log("This article is included in " + data.info.inBook.coverPage.info.title + ". The Book is latest updated at " + `${DateFormatter({date: data.info.inBook.coverPage.info.latest_update, language: "en"})}` )
-  }
-
   return (
     <>
       <LiliHelmet data={data} />

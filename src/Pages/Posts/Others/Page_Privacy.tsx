@@ -1,16 +1,17 @@
 import Sec from "../../_Templates/Layouts/InArticle/_ArticleSection";
 import Template_Page from "../../_Templates/Template_Page";
 
-const Post_Privacy: Template_Page = {
+const Page_Privacy: Template_Page = {
   info: {
     title: "Privacy",
     key: "privacy",
     brief: "",
-    latest_update: [2024, 9, 1],
+    latest_update: [2024, 10, 21],
     cover: "",
     type: "",
     authors: [],
-    tags: []
+    label: "",
+    tags: [],
   },
   content: (
     <>
@@ -76,4 +77,4 @@ const Post_Privacy: Template_Page = {
   ),
 };
 
-export default Post_Privacy;
+export default Page_Privacy;

@@ -1,7 +1,7 @@
 import Sec from "../../_Templates/Layouts/InArticle/_ArticleSection";
 import Template_Page from "../../_Templates/Template_Page";
 
-const Post_TermsOfUse: Template_Page = {
+const Page_TermsOfUse: Template_Page = {
   info: {
     title: "Terms of Uses",
     key: "terms-of-uses",
@@ -11,7 +11,8 @@ const Post_TermsOfUse: Template_Page = {
     latest_update: [2024, 9, 1],
     type: "",
     authors: [],
-    tags: []
+    tags: [],
+    label: ""
   },
   content: (
     <Sec>
@@ -24,4 +25,4 @@ const Post_TermsOfUse: Template_Page = {
   ),
 };
 
-export default Post_TermsOfUse;
+export default Page_TermsOfUse;

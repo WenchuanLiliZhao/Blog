@@ -1,16 +1,11 @@
 
-import Post_FAQ from "./Others/Post_FAQ";
-import Post_Privacy from "./Others/Post_Privacy";
-import Post_TermsOfUse from "./Others/Post_TermsOfUse";
-import Page_1 from "./Docs/Test_Page_1";
+import Pages_Others from "./Others/_Pages_Others";
+import Page_Tests from "./Test/_Page_Tests";
 
 const Posts = {
-  Post_3: Page_1,
 
-  // others
-  Post_FAQ,
-  Post_Privacy,
-  Post_TermsOfUse,
+  ...Page_Tests,
+  ...Pages_Others,
 };
 
 export default Posts;

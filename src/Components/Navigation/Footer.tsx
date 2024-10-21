@@ -13,8 +13,8 @@ const footerChannels = [
 const footerSocialMedia = Object.values(SiteInfo.social_medias);
 
 const footerOthers = [
-  Posts.Post_Privacy,
-  Posts.Post_TermsOfUse,
+  Posts.Page_Privacy,
+  Posts.Page_TermsOfUse,
 ];
 
 export default function Footer() {

@@ -2,7 +2,7 @@ import Gallery_MediumCards from "../../../Components/Sections/Galleries/MediumCa
 import PageSection from "../../../Components/Sections/PageSection";
 import SiteInfo from "../../../SiteInfo";
 import Template_Page from "../../_Templates/Template_Page";
-import Posts from "../../Posts/_Posts";
+import { BookPages } from "../../Posts/Books/_Books";
 
 const Channel_Home: Template_Page = {
   info: {
@@ -16,6 +16,7 @@ const Channel_Home: Template_Page = {
     cover: "",
     authors: [],
     tags: [],
+    label: ""
   },
 
   content: (
@@ -27,7 +28,7 @@ const Channel_Home: Template_Page = {
         <Gallery_MediumCards
           columnCount={3}
           posts={[
-            Posts.Post_3
+            BookPages.Test_Page_1,
           ]}
         />
       </PageSection>

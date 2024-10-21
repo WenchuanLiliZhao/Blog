@@ -1,3 +1,4 @@
+import { SchemaTypes } from "../../../Components/Functions/SchemaOrg";
 import Fig from "../../_Templates/Layouts/InArticle/Fig";
 import Template_Page from "../../_Templates/Template_Page";
 import Author_Shu from "../../Authors/Author_Shu";
@@ -39,7 +40,7 @@ $$
 `,
 ];
 
-const Page_1: Template_Page = {
+const Test_Page_1: Template_Page = {
   info: {
     title: "Why Do We Build the Wall?",
     key: "test_page_1",
@@ -57,15 +58,17 @@ const Page_1: Template_Page = {
     ],
 
     tags: ["a", "bbb", "ccc"],
-    type: "Article",
+
+    type: SchemaTypes["Thing"]["Creative Work"],
 
     theme: {
       "--color-sig--main": "rgba(225, 225, 225, 1)",
       "--text-color--main": "rgba(225, 225, 225, 1)",
       "--bg-color--main": "black",
-    }
+    },
+    label: ""
   },
   content: content,
 };
 
-export default Page_1;
+export default Test_Page_1;
