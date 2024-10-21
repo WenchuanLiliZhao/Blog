@@ -8,6 +8,9 @@ const Post_Privacy: Template_Page = {
     brief: "",
     latest_update: [2024, 9, 1],
     cover: "",
+    type: "",
+    authors: [],
+    tags: []
   },
   content: (
     <>

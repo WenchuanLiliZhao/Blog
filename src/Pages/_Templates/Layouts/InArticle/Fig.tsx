@@ -1,28 +1,27 @@
-import React from "react"
-import "./Fig.scss"
+import React from "react";
+import "./Fig.scss";
+import MDBlock from "../../../../Components/Functions/Markdown";
 
 interface Props {
-  art: JSX.Element
-  caption?: JSX.Element | string
-  size?: "small"
+  src: string;
+  title: string;
+  caption: string;
+  size?: "small";
 }
 
-const Fig: React.FC<Props> = ({ art, caption, size }) => {
+const Fig: React.FC<Props> = ({ src, caption, size, title }) => {
   return (
     <figure className={`fig ${size}`}>
-      <div className="art">
-        {art}
-      </div>
-      
-      {caption != undefined ?
-        <figcaption>
-          {caption}
-        </figcaption>
-        :
-        ""
-      }
-    </figure>
-  )
-}
+      <img src={src} alt={title} />
 
-export default Fig
+      {caption != undefined ? (
+        <figcaption>
+          
+          <MDBlock children={`sss ${caption}`} />
+        </figcaption>
+      ) : ""}
+    </figure>
+  );
+};
+
+export default Fig;

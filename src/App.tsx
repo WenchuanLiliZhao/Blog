@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Channels from "./Pages/Channels/_Channels";
 import ChannelLayout from "./Pages/_Templates/Layouts/ChannelLayout";
 import Template_Page from "./Pages/_Templates/Template_Page";
-import Posts from "./Pages/Posts/_Posts";
 import PostLayout from "./Pages/_Templates/Layouts/PostLayout";
+import { AllPagesInBooks } from "./Pages/Posts/Books/_Books";
 
 function App() {
   useState(() => {
@@ -46,7 +46,7 @@ function App() {
           ))}
 
           {/* import posts */}
-          {Object.values(Posts).map((item: Template_Page, i: number) => (
+          {Object.values(AllPagesInBooks).map((item: Template_Page, i: number) => (
             <Route
               key={`${item}${i}`}
               path={`/${item.info.key}`}
@@ -57,6 +57,19 @@ function App() {
               }
             />
           ))}
+
+          {/* import posts */}
+          {/* {Object.values(Posts).map((item: Template_Page, i: number) => (
+            <Route
+              key={`${item}${i}`}
+              path={`/${item.info.key}`}
+              element={
+                <>
+                  <PostLayout data={item} />
+                </>
+              }
+            />
+          ))} */}
         </Routes>
       </BrowserRouter>
     </>
@@ -64,5 +77,3 @@ function App() {
 }
 
 export default App;
-
-

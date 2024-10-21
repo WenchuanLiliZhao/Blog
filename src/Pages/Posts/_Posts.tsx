@@ -2,10 +2,10 @@
 import Post_FAQ from "./Others/Post_FAQ";
 import Post_Privacy from "./Others/Post_Privacy";
 import Post_TermsOfUse from "./Others/Post_TermsOfUse";
-import Stories from "./Stories/_Stories";
+import Post_3 from "./Books/Calculus/Docs/Post_3";
 
 const Posts = {
-  ...Stories,
+  Post_3,
 
   // others
   Post_FAQ,

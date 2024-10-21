@@ -40,14 +40,7 @@
     }
   }
 
-  > .end {
-    padding: 0 var(--content-spacing--w--res);
-    padding-top: 40px;
-    
-    .article-tags {
-      max-width: 800px;
-      margin: 0 auto;
-      margin-bottom: 40px;
-    }
+  > .post-body {
+    font-family: var(--ff-serif);
   }
 }

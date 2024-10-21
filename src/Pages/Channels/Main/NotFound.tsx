@@ -8,7 +8,10 @@ const NotFound: Template_Page = {
     title_display: (<>404 Not Found</>),
     brief: "",
     latest_update: SiteInfo.latest_update,
-    cover: ""
+    cover: "",
+    type: "",
+    authors: [],
+    tags: []
   },
   content: (<>404 hahhahahh</>)
 }

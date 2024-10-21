@@ -7,7 +7,10 @@ const Post_FAQ: Template_Page = {
     key: "faq",
     latest_update: [2024, 9, 1],
     brief: "",
-    cover: ""
+    cover: "",
+    type: "",
+    authors: [],
+    tags: []
   },
   content: (<></>)
 }

@@ -26,8 +26,8 @@ const Gallery_BigCards: React.FC<Props> = ({ posts }) => {
             <div className="info">
               <div className="container">
                 <div className="label">
-                  {item.info.label != undefined ? (
-                    <>{item.info.label}</>
+                  {item.info.type != undefined ? (
+                    <>{item.info.type}</>
                   ) : (
                     ""
                   )}

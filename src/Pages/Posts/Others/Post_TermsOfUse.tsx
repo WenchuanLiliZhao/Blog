@@ -9,6 +9,9 @@ const Post_TermsOfUse: Template_Page = {
     brief: "",
     cover: "",
     latest_update: [2024, 9, 1],
+    type: "",
+    authors: [],
+    tags: []
   },
   content: (
     <Sec>

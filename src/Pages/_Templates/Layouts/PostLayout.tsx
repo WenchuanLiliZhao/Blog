@@ -4,7 +4,7 @@ import React from "react";
 import Template_Page from "../Template_Page";
 import PageBody from "../_Template_PageBody";
 import SiteInfo from "../../../SiteInfo";
-import Template_Author from "../Template_AuthorInPost";
+import Template_Author from "../Template_Author";
 import DateFormatter from "../../../Components/Functions/DateFormatter";
 import ContentMapper from "../../../Components/Functions/ContentMapper";
 // import ContentMapper from "../../../Components/Functions/ContentMapper";
@@ -17,6 +17,10 @@ interface Props {
 const PostLayout: React.FC<Props> = ({ data }) => {
   const showAuthors = data.info.authors != undefined;
 
+  if (data.inBook != null) {
+    console.log("This article is included in " + data.inBook.coverPage.info.title)
+  }
+
   return (
     <>
       <LiliHelmet data={data} />
@@ -24,11 +28,11 @@ const PostLayout: React.FC<Props> = ({ data }) => {
         <div className="post-layout">
           {data.info.front != null ? data.info.front : <></>}
 
-          <div className="post-header">
+          <header className="post-header">
             <div className="container">
-              {data.info.label != null ? (
+              {data.info.type != null ? (
                 <>
-                  <div className="label">{data.info.label}</div>
+                  <div className="label">{data.info.type}</div>
                 </>
               ) : (
                 <>
@@ -64,7 +68,7 @@ const PostLayout: React.FC<Props> = ({ data }) => {
                 ""
               )}
             </div>
-          </div>
+          </header>
 
           <article className="post-body">
             <section>

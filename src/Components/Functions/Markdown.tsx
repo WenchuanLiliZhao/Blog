@@ -9,7 +9,7 @@ interface Props {
   children: any
 }
 
-const Markdown: React.FC<Props> = ({ children }) => {
+const MDBlock: React.FC<Props> = ({ children }) => {
 
   return (
     <ReactMarkdown
@@ -21,4 +21,4 @@ const Markdown: React.FC<Props> = ({ children }) => {
   );
 };
 
-export default Markdown
+export default MDBlock

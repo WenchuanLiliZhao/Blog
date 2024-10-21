@@ -16,8 +16,8 @@ const InArticleCard: React.FC<Props> = ({ data }) => {
         </div>
         <div className="info">
           <div className="container">
-            {data.info.label != undefined ? (
-              <div className="label">{data.info.label}</div>
+            {data.info.type != undefined ? (
+              <div className="label">{data.info.type}</div>
             ) : (
               ""
             )}

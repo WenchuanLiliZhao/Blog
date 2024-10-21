@@ -10,10 +10,12 @@ const Channel_Home: Template_Page = {
     key: "",
     brief: `${SiteInfo.brief}`,
     title_display: <>{SiteInfo.title}</>,
-    label: `聯合電子出版`,
+    type: `聯合電子出版`,
     latest_update: SiteInfo.latest_update,
     front: undefined,
-    cover: ""
+    cover: "",
+    authors: [],
+    tags: [],
   },
 
   content: (

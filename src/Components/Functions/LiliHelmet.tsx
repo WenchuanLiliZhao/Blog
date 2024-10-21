@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Template_Page from "../../Pages/_Templates/Template_Page";
 import React from "react";
 import SiteInfo from "../../SiteInfo";
+import Template_Author from "../../Pages/_Templates/Template_Author";
 
 interface Props {
   data: Template_Page;
@@ -17,8 +18,8 @@ const LiliHelmet: React.FC<Props> = ({ data }) => {
 
       <meta name="description" content={data.info.brief} />
 
-      {data.info.keywords != undefined ? (
-        <meta name="keywords" content={data.info.keywords.join(", ")} />
+      {data.info.tags != undefined ? (
+        <meta name="keywords" content={data.info.tags.join(", ")} />
       ) : (
         ""
       )}
@@ -26,13 +27,15 @@ const LiliHelmet: React.FC<Props> = ({ data }) => {
       <script type="application/ld+json">
         {`{
           "@context": "https://schema.org",
-          "@type": "WebSite",
+          "@type": ${data.info.type != "" ? data.info.type : "WebSite"},
           "name": "${SiteInfo.title}",
           "url": "${SiteInfo.url}",
 
-          "author": ${data.info.authors != undefined ? `"${data.info.authors[0].data.info.title}",` : `"${SiteInfo.author.info.title}",`}
+          "author": "${data.info.authors.map((item: Template_Author) => 
+            item.data.info.title
+          )}", ${" "}
 
-          ${data.info.cover != undefined ? `"image": "${data.info.cover}",` : null}
+          "image": "${data.info.cover}",
 
           "abstract": "${data.info.brief}",
         }`}

@@ -11,9 +11,9 @@ const ChannelPageHeader: React.FC<Props> = ({ page }) => {
       <>
         <div className="channel-page-header">
           <div className="container">
-            {page.info.label != null ? (
+            {page.info.type != null ? (
               <>
-                <div className="label">{page.info.label}</div>
+                <div className="label">{page.info.type}</div>
               </>
             ) : (
               <></>
