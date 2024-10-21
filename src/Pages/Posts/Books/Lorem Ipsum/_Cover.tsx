@@ -1,5 +1,7 @@
 import Template_Book from "../../../_Templates/Template_Book";
-import Post_3 from "./Docs/Post_3";
+import Page_1 from "./Docs/Page_1";
+import Page_2 from "./Docs/Page_2";
+import Page_3 from "./Docs/Page_3";
 
 
 
@@ -24,8 +26,13 @@ const Book_Calculus: Template_Book = {
   published: false,
 
   toc: {
-    "Chapter One": [
-      Post_3,
+    "" : [
+      Page_1,
+    ],
+
+    "Lorem Ipsum": [
+      Page_2,
+      Page_3,
     ],
   },
 }

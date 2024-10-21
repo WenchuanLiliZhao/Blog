@@ -3,7 +3,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef } from "react";
 import "./SlidingCards.scss";
-import DateFormatter from "../Functions/DateFormatter";
+import { DateFormatter } from "../Functions/DateHandling";
 import Template_Page from "../../Pages/_Templates/Template_Page";
 
 interface Props {

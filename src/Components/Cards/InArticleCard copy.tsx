@@ -1,6 +1,6 @@
 import "./InArticleCard.scss";
 
-import DateFormatter from "../Functions/DateFormatter";
+import { DateFormatter } from "../Functions/DateHandling";
 
 interface Props {
   title: string;

@@ -14,12 +14,16 @@ interface Template_Page {
     front?: JSX.Element;
     showHeader?: boolean;
     title_display?: JSX.Element;
+
+    inBook?: Template_Book;
+
+    theme?: {[key: string] : string;}
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   content: any;
 
-  inBook?: Template_Book
+  
 }
 
 export default Template_Page;

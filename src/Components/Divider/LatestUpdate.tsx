@@ -1,7 +1,7 @@
 import "./LatestUpDate.scss";
 
 import React from "react";
-import DateFormatter from "../Functions/DateFormatter";
+import { DateFormatter } from "../Functions/DateHandling";
 
 interface Props {
   date: number[],

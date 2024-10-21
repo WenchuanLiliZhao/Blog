@@ -1,7 +1,7 @@
 import "./InArticleCard.scss";
 
 import Template_Page from "../../Pages/_Templates/Template_Page";
-import DateFormatter from "../Functions/DateFormatter";
+import { DateFormatter } from "../Functions/DateHandling";
 
 interface Props {
   data: Template_Page;

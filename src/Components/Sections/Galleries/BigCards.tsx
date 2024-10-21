@@ -1,7 +1,7 @@
 import "./BigCards.scss";
 
 import React from "react";
-import DateFormatter from "../../Functions/DateFormatter";
+import { DateFormatter } from "../../Functions/DateHandling"; 
 import Divider_Wave from "../../Divider/Wave";
 import Template_Page from "../../../Pages/_Templates/Template_Page";
 

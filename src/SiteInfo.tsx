@@ -1,4 +1,4 @@
-import Today from "./Components/Functions/Today"
+import { Today } from "./Components/Functions/DateHandling"
 import Site from "./InfoTemplates/SiteInfoTemplate"
 import SocialMedia from "./InfoTemplates/SocialMedia"
 import LogoImage from "./assets/LogoImage.png"

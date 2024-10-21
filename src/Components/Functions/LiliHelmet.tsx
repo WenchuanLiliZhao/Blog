@@ -9,6 +9,12 @@ interface Props {
 }
 
 const LiliHelmet: React.FC<Props> = ({ data }) => {
+  const styledTheme = data.info.theme
+    ? Object.entries(data.info.theme)
+        .map(([key, value]) => `${key}: ${value};`)
+        .join(" ")
+    : "";
+
   return (
     <Helmet>
       {/* Example meta tags; customize these as needed */}
@@ -31,8 +37,8 @@ const LiliHelmet: React.FC<Props> = ({ data }) => {
           "name": "${SiteInfo.title}",
           "url": "${SiteInfo.url}",
 
-          "author": "${data.info.authors.map((item: Template_Author) => 
-            item.data.info.title
+          "author": "${data.info.authors.map(
+            (item: Template_Author) => item.data.info.title
           )}", ${" "}
 
           "image": "${data.info.cover}",
@@ -41,12 +47,11 @@ const LiliHelmet: React.FC<Props> = ({ data }) => {
         }`}
       </script>
 
-      {/* <style>{`
+      <style>{`
         :root {
-          --color-sig--main: black;
-          --color-sig--sec: black;
+          ${styledTheme}
         }
-      `}</style> */}
+      `}</style>
     </Helmet>
   );
 };

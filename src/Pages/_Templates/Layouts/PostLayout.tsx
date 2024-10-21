@@ -5,7 +5,7 @@ import Template_Page from "../Template_Page";
 import PageBody from "../_Template_PageBody";
 import SiteInfo from "../../../SiteInfo";
 import Template_Author from "../Template_Author";
-import DateFormatter from "../../../Components/Functions/DateFormatter";
+import { DateFormatter } from "../../../Components/Functions/DateHandling";
 import ContentMapper from "../../../Components/Functions/ContentMapper";
 // import ContentMapper from "../../../Components/Functions/ContentMapper";
 import LiliHelmet from "../../../Components/Functions/LiliHelmet";
@@ -17,8 +17,8 @@ interface Props {
 const PostLayout: React.FC<Props> = ({ data }) => {
   const showAuthors = data.info.authors != undefined;
 
-  if (data.inBook != null) {
-    console.log("This article is included in " + data.inBook.coverPage.info.title)
+  if (data.info.inBook != null) {
+    console.log("This article is included in " + data.info.inBook.coverPage.info.title + ". The Book is latest updated at " + `${DateFormatter({date: data.info.inBook.coverPage.info.latest_update, language: "en"})}` )
   }
 
   return (
