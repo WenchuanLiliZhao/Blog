@@ -1,7 +1,7 @@
-import Fig from "../../../../_Templates/Layouts/InArticle/Fig";
-import Template_Page from "../../../../_Templates/Template_Page";
-import Author_Shu from "../../../../Authors/Author_Shu";
-import Author_Wenchuan from "../../../../Authors/Author_Wenchuan";
+import Fig from "../../_Templates/Layouts/InArticle/Fig";
+import Template_Page from "../../_Templates/Template_Page";
+import Author_Shu from "../../Authors/Author_Shu";
+import Author_Wenchuan from "../../Authors/Author_Wenchuan";
 
 const brief = `
 It is impossible to establish a formal theory in which every term is formally defined in the language of the theory. In other words, no formal theory can be entirely unambiguous. Otherwise, if such a theory existed, it would either start from a set of circular definitions or an infinite chain of definitions. This is a fundamental limitation in the nature of formal theories.
@@ -71,7 +71,7 @@ $$
 const Page_3: Template_Page = {
   info: {
     title: "Why Do We Build the Wall?",
-    key: "post_3",
+    key: "test_page_3",
     cover: "https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg",
     latest_update: [2024, 9, 4],
     brief: brief,

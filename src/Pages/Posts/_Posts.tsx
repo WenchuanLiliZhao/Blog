@@ -2,7 +2,7 @@
 import Post_FAQ from "./Others/Post_FAQ";
 import Post_Privacy from "./Others/Post_Privacy";
 import Post_TermsOfUse from "./Others/Post_TermsOfUse";
-import Page_1 from "./Books/Lorem Ipsum/Docs/Page_1";
+import Page_1 from "./Docs/Test_Page_1";
 
 const Posts = {
   Post_3: Page_1,
