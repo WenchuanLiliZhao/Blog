@@ -40,10 +40,10 @@ $$
 `,
 ];
 
-const Test_Page_1: Template_Page = {
+const Page_Test_1: Template_Page = {
   info: {
     title: "Why Do We Build the Wall?",
-    key: "test_page_1",
+    key: "page test 1",
     cover: "https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg",
     latest_update: [2024, 9, 3],
     brief: "It is impossible to establish a formal theory in which every term is formally defined in the language of the theory. In other words, no formal theory can be entirely unambiguous. Otherwise, if such a theory existed, it would either start from a set of circular definitions or an infinite chain of definitions. This is a fundamental limitation in the nature of formal theories.",
@@ -71,4 +71,4 @@ const Test_Page_1: Template_Page = {
   content: content,
 };
 
-export default Test_Page_1;
+export default Page_Test_1;

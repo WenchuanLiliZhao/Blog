@@ -1,11 +1,10 @@
 
-import Pages_Others from "./Others/_Pages_Others";
-import Page_Tests from "./Test/_Page_Tests";
+import Book_Other from "./Others/_Book_Other";
+import Book_Tests from "./Test/_Book_Test";
 
 const Posts = {
-
-  ...Page_Tests,
-  ...Pages_Others,
+  ...Book_Tests,
+  ...Book_Other,
 };
 
 export default Posts;

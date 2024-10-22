@@ -68,10 +68,10 @@ $$
 `,
 ];
 
-const Test_Page_3: Template_Page = {
+const Page_Test_3: Template_Page = {
   info: {
     title: "Why Do We Build the Wall?",
-    key: "test_page_3",
+    key: "page test 3",
     cover: "https://i.pinimg.com/1200x/32/f5/ad/32f5ad100f4298e08fd54aa09c6e049a.jpg",
     latest_update: [2024, 9, 4],
     brief: brief,
@@ -92,4 +92,4 @@ const Test_Page_3: Template_Page = {
   content: content,
 };
 
-export default Test_Page_3;
+export default Page_Test_3;

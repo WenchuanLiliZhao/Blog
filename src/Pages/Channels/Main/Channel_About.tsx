@@ -28,7 +28,7 @@ const Channel_About: Template_Page = {
         <Gallery_MediumCards
           columnCount={3}
           posts={[
-            Posts.Test_Page_1
+            Posts.Page_Test_1
           ]}
         />
       </PageSection>
